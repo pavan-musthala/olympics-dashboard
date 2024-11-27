@@ -33,16 +33,25 @@ st.markdown("""
     .stSelectbox div[data-baseweb="select"] > div {
         background-color: #2d2d2d !important;
         color: white !important;
+        padding: 0.5rem !important;
+        min-height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
     }
     
     .stSelectbox div[data-baseweb="select"] > div > div {
         color: white !important;
+        display: flex !important;
+        align-items: center !important;
+        padding: 0 0.5rem !important;
     }
     
     /* Fix for input state */
     .stSelectbox div[data-baseweb="select"] input {
         color: white !important;
         background-color: #2d2d2d !important;
+        padding: 0.5rem !important;
+        height: 100% !important;
     }
     
     .stSelectbox div[data-baseweb="select"] input::placeholder {
@@ -64,16 +73,28 @@ st.markdown("""
         color: white !important;
     }
     
+    /* Dropdown styling */
     .stSelectbox div[role="listbox"] {
         background-color: #2d2d2d !important;
+        padding: 0.25rem !important;
     }
     
     .stSelectbox div[role="option"] {
         color: white !important;
+        padding: 0.5rem 1rem !important;
+        min-height: 40px !important;
+        display: flex !important;
+        align-items: center !important;
     }
     
     .stSelectbox div[role="option"]:hover {
         background-color: #404040 !important;
+    }
+    
+    /* Selected value styling */
+    .stSelectbox [data-baseweb="select"] span {
+        color: white !important;
+        margin: 0 !important;
     }
     
     /* Radio button styling */
