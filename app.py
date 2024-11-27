@@ -29,6 +29,37 @@ st.markdown("""
         color: #ffffff;
     }
     
+    /* Selectbox styling */
+    .stSelectbox div[data-baseweb="select"] > div {
+        background-color: #2d2d2d !important;
+        color: white !important;
+    }
+    
+    .stSelectbox div[data-baseweb="select"] > div > div {
+        color: white !important;
+    }
+    
+    .stSelectbox div[data-baseweb="select"] > div::placeholder {
+        color: white !important;
+    }
+    
+    .stSelectbox div[role="listbox"] {
+        background-color: #2d2d2d !important;
+    }
+    
+    .stSelectbox div[role="option"] {
+        color: white !important;
+    }
+    
+    .stSelectbox div[role="option"]:hover {
+        background-color: #404040 !important;
+    }
+    
+    /* Radio button styling */
+    .stRadio label {
+        color: white !important;
+    }
+    
     /* Chart container styling */
     .stPlotlyChart {
         background-color: #1e1e1e;  /* Dark gray */
