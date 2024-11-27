@@ -39,6 +39,27 @@ st.markdown("""
         color: white !important;
     }
     
+    /* Fix for input state */
+    .stSelectbox div[data-baseweb="select"] input {
+        color: white !important;
+        background-color: #2d2d2d !important;
+    }
+    
+    .stSelectbox div[data-baseweb="select"] input::placeholder {
+        color: white !important;
+        opacity: 0.7;
+    }
+    
+    .stSelectbox div[data-baseweb="select"] input:focus {
+        color: white !important;
+        background-color: #2d2d2d !important;
+    }
+    
+    .stSelectbox div[data-baseweb="select"]:focus-within {
+        background-color: #2d2d2d !important;
+        color: white !important;
+    }
+    
     .stSelectbox div[data-baseweb="select"] > div::placeholder {
         color: white !important;
     }
